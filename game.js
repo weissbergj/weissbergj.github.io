@@ -151,7 +151,26 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
+// Event Listener for Touch Action and Restart
+document.addEventListener('touchstart', (event) => {
+    event.preventDefault();
+    if (isGameOver) {
+        initializeGame();
+        startGame();
+    } else if (!isGameStarted) {
+        startGame();
+    } else {
+        handleJump();
+    }
+});
+
 restartButton.addEventListener('click', () => {
+    initializeGame();
+    startGame();
+});
+
+// Add touch event listener to the restart button
+restartButton.addEventListener('touchstart', () => {
     initializeGame();
     startGame();
 });
