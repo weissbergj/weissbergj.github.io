@@ -1,3 +1,4 @@
+/* This is the style for the main website */
 p {
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
@@ -30,4 +31,137 @@ h2 {
 
 .center_text {
     text-align: center;
+}
+
+
+
+/* Below is the style for the game */
+.game_margin {
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#game_container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 150px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#person {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+#person img {
+    width: 100%;
+    height: 100%;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    background-size: cover;
+}
+
+.obstacle1 {
+    width: 30px;
+    height: 60px;
+    background-image: url('Files/zzz.avif');
+}
+
+.obstacle2 {
+    width: 60px;
+    height: 60px;
+    background-image: url('Files/Stanford_Logo.webp');
+}
+
+.obstacle3 {
+    width: 90px;
+    height: 60px;
+    background-image: url('Files/SAIL.png');
+}
+
+.score-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+}
+
+.high_score {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+
+.score {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.2;
+    margin-right: 5px;
+}
+
+.separator {
+    margin: 0 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+#game_over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#game_over p {
+    margin: 10px 0;
+}
+
+#restart_button {
+    display: block;
+    margin: 10px auto;
+    font-size: 24px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#game_over img {
+    display: block;
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.start_message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }

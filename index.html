@@ -15,6 +15,7 @@
     </head>
 
     <body>
+         <!-- The main body of the website is below -->
         <div class="main_margin">
             <img src="Files/Headshot.jpg" alt="Image of Jared" class="center_image">
             
@@ -29,6 +30,27 @@
             <p class="center_text">
                 Hi, I am a Stanford computer science (MSCS AI) and economics student. Here are some things I have worked on.
             </p>
+
+        <!-- The game container is below -->
+        <div class="game_margin">
+            <div id="game_container">
+                <div class="score-container">
+                    <div class="high_score">High Score: 0</div>
+                    <div class="separator">|</div>
+                    <div class="score">Score: 0</div>
+                </div>
+                <div id="person"><img src="Files/square_headshot.jpg" alt="Jared"></div>
+                <div id="game_over" class="hidden">
+                    <p>Game Over</p>
+                    <img id="restart_button" src="files/refresh.jpg" alt="Reload">
+                </div>
+                <div id="start_message" class="start_message">
+                    Press Space to Play
+                </div>
+            </div>
+        </div>
+
+        <script src="game.js"></script>
 
 <!--             <h2>
                 Projects
