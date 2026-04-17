@@ -1,6 +1,6 @@
 /* This is the style for the main website */
 body {
-    background-color: #f6fbff;
+    background-color: #f6fbff; /* very soft baby blue */
     margin: 0;
 }
 
@@ -8,17 +8,25 @@ p, li {
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
+    text-align: left;
 }
 
 h1 {
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: 0;
 }
 
 h2 {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 28px;
+    text-align: left;
+}
+
+.center_text {
+    text-align: left;
 }
 
 .main_margin {
@@ -27,17 +35,14 @@ h2 {
     margin: 40px auto;
     padding: 0 20px 40px;
     box-sizing: border-box;
+    text-align: left;
 }
 
 .center_image {
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 0 20px 0;
     width: 50%;
     max-width: 260px;
-}
-
-.center_text {
-    text-align: center;
 }
 
 ul {
